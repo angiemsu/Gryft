@@ -17,19 +17,31 @@
         android:scaleType="fitXY"
         android:src="@drawable/rideshare" />
 
+    <TextView
+        android:text="You are travelling from A to B! You could save $x."
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:gravity="center"
+        android:textColor="#ff000000"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
         <TableRow
-            android:paddingTop="20dp">
+            android:paddingTop="0dp"
+            android:paddingBottom="2dp">
 
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingLeft="15dp"
                 android:text="Current $"
@@ -46,7 +58,7 @@
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingLeft="15dp"
                 android:text="Potential $"

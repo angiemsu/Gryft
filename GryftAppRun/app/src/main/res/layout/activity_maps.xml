@@ -38,7 +38,7 @@
                 android:textSize="15dp" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/typeFrom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -55,7 +55,7 @@
 
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/typeTo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
@@ -82,7 +82,6 @@
             android:layout_height="50dp"
             android:background="#79CDCD"
             android:textSize="18dp"
-            android:onClick="sendMessage"
             android:id="@+id/routeButton" />
 
 
