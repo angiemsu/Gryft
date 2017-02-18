@@ -3,6 +3,7 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/widget28"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -12,14 +13,14 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="215dp"
-        android:gravity="left"
-        android:src="@drawable/rideshare"
         android:cropToPadding="false"
-        android:scaleType="fitXY" />
+        android:gravity="left"
+        android:scaleType="fitXY"
+        android:src="@drawable/rideshare" />
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TableRow
             android:layout_width="match_parent"
@@ -32,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:paddingLeft="15dp"
-                android:text="Current Cost: "
+                android:text="Pickup: "
                 android:textColor="#ff000000"
                 android:textSize="15dp" />
 
@@ -41,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="none" />
+                android:inputType="text" />
 
 
         </TableRow>
@@ -49,7 +50,9 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
 
             <TextView
                 android:id="@+id/textView2"
@@ -57,30 +60,40 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:paddingLeft="15dp"
-                android:text="Potential Cost: "
+                android:text="Destination: "
                 android:textColor="#ff000000"
                 android:textSize="15dp" />
+
 
             <EditText
                 android:id="@+id/editText2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="none" />
+                android:inputType="text" />
 
 
         </TableRow>
 
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:map="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context="com.example.su_ange.gryft.MapsActivity" />
+
+        <Button
+            android:text="Find routes"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#79CDCD"
+            android:textSize="18dp"
+            android:onClick="sendMessage"
+            android:id="@+id/routeButton" />
+
 
     </TableLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.su_ange.gryft.MapsActivity" />
 
 
 </LinearLayout>
