@@ -18,7 +18,7 @@
         android:src="@drawable/rideshare" />
 
     <TextView
-        android:text="You are travelling from 164 Hillcrest Ave to LAVO Nightclub! You could save $13.40."
+        android:text="You could save $13.40 by walking 2.5 blocks."
         android:paddingTop="10dp"
         android:paddingLeft="15dp"
         android:gravity="left"
@@ -83,7 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context="com.example.su_ange.gryft.MapsActivity"
-            map:cameraZoom="19"/>
+            map:cameraZoom="17"/>
 
 
     </TableLayout>
